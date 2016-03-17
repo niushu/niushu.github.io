@@ -242,13 +242,13 @@
 
 <p>大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是我给它补上了。）</p>
 
-<p>本地调试环境需要 <code>gem install jekyll</code>，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功</p>
+<p>本地调试环境需要 <code class="highlighter-rouge">gem install jekyll</code>，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功</p>
 
 <p>Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了（平时更习惯 SCSS 些），<strong>不过其实我一直觉得 Bootstrap 在移动端的体验做得相当一般，比我在淘宝参与的团队 CSS 框架差多了……</strong>所以为了体验，也补了不少 CSS 进去</p>
 
 <p>最后就进入了耗时反而最长的<strong>做图、写字</strong>阶段，也算是进入了<strong>写博客</strong>的正轨，因为是类似 Hack Day 的方式去搭这个站的，所以折腾折腾着大半夜就过去了。</p>
 
-<p>第二天考虑中文字体的渲染，fork 了 <a href="http://www.typeisbeautiful.com/">Type is Beautiful</a> 的 <code>font</code> CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。</p>
+<p>第二天考虑中文字体的渲染，fork 了 <a href="http://www.typeisbeautiful.com/">Type is Beautiful</a> 的 <code class="highlighter-rouge">font</code> CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。</p>
 
 <h2 id="section-2">后记</h2>
 
@@ -303,6 +303,13 @@ Hux 的 Blog 就这么开通了。
                 <ul class="pager">
                     
                     
+                    <li class="next">
+                        <a href="/2015/01/29/hello/" data-toggle="tooltip" data-placement="top" title="Hello 2015">
+                        Next<br>
+                        <span>Hello 2015</span>
+                        </a>
+                    </li>
+                    
                 </ul>
 
 
@@ -336,6 +343,10 @@ Hux 的 Blog 就这么开通了。
                     <div class="tags">
         				
                             
+                				<a href="/tags/#生活" title="生活" rel="2">
+                                    生活
+                                </a>
+                            
         				
         			</div>
                 </section>
@@ -347,15 +358,9 @@ Hux 的 Blog 就这么开通了。
                 <h5>FRIENDS</h5>
                 <ul class="list-inline">
                     
-                        <li><a href="http://niushu.github.io">niushu's Blog</a></li>
-                    
-                        <li><a href="#">Foo</a></li>
-                    
-                        <li><a href="#">Bar</a></li>
+                        <li><a href="http://m.ibeiliao.com">beiliao</a></li>
                     
                         <li><a href="#">Example Friends</a></li>
-                    
-                        <li><a href="#">It helps SEO</a></li>
                     
                 </ul>
                 
@@ -550,6 +555,20 @@ Hux 的 Blog 就这么开通了。
 
 
 <!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'b92d5478eae80fff9c8043e338d8ee0e';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 
 
 
